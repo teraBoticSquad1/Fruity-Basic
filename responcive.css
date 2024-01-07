@@ -1,0 +1,244 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(213, 230, 182);
+ 
+}
+nav a{
+    /* display: flex; */
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+    margin-right: 15px;
+    margin-left: 5px;
+    cursor: pointer;
+   
+  
+  
+}
+nav  a:hover{
+    color: rgb(81, 231, 68);
+    
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+}
+header{
+    border-bottom: 2px solid silver;
+    height: 50px;
+    padding: 5px;
+}
+nav > ul {
+    
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px;
+   
+   
+}
+
+nav > ul  li{
+    list-style: none;
+    margin-left: 40px;
+   
+}
+nav > ul li :hover{
+   
+    color:rgb(68, 238, 16);
+}
+nav > ul > li a {
+    text-decoration: none;
+    color: black;
+  
+}
+nav > ul > li:hover >ul{
+    display:block;
+}
+
+.drop_down{   
+display:none;
+position:absolute;
+text-align: center;
+background-color:white ;
+border-top: 4px solid;
+border-image:linear-gradient(to right,green,rgb(135, 202, 47)); 
+border-image-slice:1; 
+z-index: 2;
+}
+
+.drop_down li {
+ padding: 0;
+ margin: 0;
+
+}
+
+.drop_down2{
+    display: none;
+    /* display: flex; */
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+    background-color:white ;
+    border-top: 4px solid;
+    border-image: linear-gradient(to right,green,rgb(135, 202, 47)); 
+    border-image-slice: 1;  
+    margin-left: 0;
+}
+nav > ul > li:hover >.drop_down2{
+    display:flex;
+    flex-wrap: wrap;
+    float:right;
+}
+.quote-link {
+    padding: 8px 16px; /* Adjust padding as needed */
+    border: 1px solid #333; /* Adjust border style and color */
+    background-color: #80df13cb; /* Adjust background color */
+    text-decoration: none; /* Remove default underline on link */
+    color:white; /* Set text color */
+    border-radius: 4px; /* Optional: Add rounded corners */
+}
+
+.quote-link:hover {
+    background-color: #22af1d; /* Adjust background color on hover */
+    color:white;
+}
+.content {
+    margin-left: 90px;
+    width: 1200px;
+    height: 550px;
+    position:relative;
+    display: flex;
+    /* flex-wrap: wrap; */
+    z-index: 1; 
+}
+
+.box1 {
+    border: 2px solid silver;
+    width:calc(50% - 15px);
+    height: 100%;
+    margin-right: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.box1 img {
+    width:100%;
+    height:100%;
+    background-color:white;
+    transition:transform 3s ease-in-out;
+}
+
+.box1 img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transform-origin:center;
+}
+
+.sub_box {
+   
+    width:calc(50% + 15px);
+    height:100%;
+    display:flex;
+    flex-direction:column;
+ 
+}
+
+.box2{
+    width:100%;
+    height:50%;
+    overflow:hidden;
+    position:relative;
+}
+.box3 {
+    width:100%;
+    height:50%;
+    overflow:hidden;
+    position:relative;
+}
+
+.box2 img,
+.box3 img {
+    width:100%;
+    height:calc(100% - 15px);
+    transition:transform 3s ease-in-out;
+    object-fit: cover;
+}
+
+.box2 img:hover,
+.box3 img:hover {
+    transform:scale(1.1);
+    cursor:pointer;
+    transform-origin:center;
+}
+
+h3 {
+    margin-top: 20px; /* Add margin to create space between "Our products" and .content */
+}
+
+.centered-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Horizontally center the text */
+    align-items: center; /* Vertically center the text */
+    font-weight: bolder;
+    font-size:50px;
+}
+
+.content2 > nav  ul{
+    display: flex;
+    flex-wrap: wrap;
+    border-top:none;
+    padding: 25px;
+ 
+    
+}
+.content2  ul  li{
+    list-style: none;
+    /* margin-left:110px; */
+    border-left: 2px solid silver;
+    text-align: center;
+    padding-left: 25px;
+   
+}
+.content2  ul li:first-child{
+    border-left:none;
+}
+.content2  ul  li  :active
+ {
+   
+    color:rgb(9, 122, 228);
+    border-bottom: 2px solid rgb(67, 238, 15);
+}
+
+.content2 > nav ul  li a {
+    text-decoration: none;
+    color:black; 
+    text-align: center;
+   
+}
+.menu-container{
+   display: flex;
+   flex-wrap: wrap;
+   padding: 10px;
+}
+.food{
+    width:300px;
+    border: 2px solid silver;
+    margin: 10px;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+.food:hover{
+    cursor: pointer;
+}
+.food img{
+    width: 100%;
+    height: 60%;
+}
+h2,p{
+    text-align: center;
+    
+}
