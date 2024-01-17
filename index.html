@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fruity Basic</title>
+    <!-- linking bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- style.css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- header start -->
+    <header class="fruity-header">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <a class="navbar-brand" href="">
+              <img src="img/logo/logo.png" alt="Your Logo" width="120" />
+            </a>
+          </div>
+          <div class="col-10">
+            <div class="menu-wrap">
+              <ul class="menu">
+                <li class="menu-item"><a href="#">Item</a></li>
+                <li class="menu-item"><a href="#">Item</a></li>
+                <li class="menu-item"><a href="#">Item</a></li>
+                <li class="menu-item"><a href="#">Item</a></li>
+                <li class="menu-item"><a href="#">Item</a></li>
+                <li class="menu-item"><a href="#">Item</a></li>
+                <li class="menu-item"><a href="#">Item</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col">
+            <i class="fa fa-bars menu-humberger"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- hero section start -->
+    <div class="slider-container">
+      <div class="slider-wrap">
+        <div class="slide active-slide">
+          <div class="image-wrap">
+            <img class="image" src="/img/slider/13.jpg" alt="" />
+          </div>
+          <div class="slider-content">
+            <p class="para">Lorem ipsum dolor sit amet.</p>
+            <h1 class="main-heading">
+              Lorem ipsum dolor sit amet consectetur.
+            </h1>
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+              odit blanditiis, voluptas nisi iure iste esse ducimus provident
+              numquam modi.
+            </p>
+            <button class="any-qs-btn hero-btn">Explore Fruits</button>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="image-wrap">
+            <img class="image" src="/img/slider/14.jpg" alt="" />
+          </div>
+          <div class="slider-content slider-content-right">
+            <p class="para">Lorem ipsum dolor sit amet.</p>
+            <h1 class="main-heading">
+              Lorem ipsum dolor sit amet consectetur adipisicing.
+            </h1>
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+              odit blanditiis, voluptas nisi iure iste esse ducimus provident
+              numquam modi.
+            </p>
+            <button class="any-qs-btn hero-btn">Explore Fruits</button>
+          </div>
+        </div>
+        <i class="fas fa-arrow-left" onclick="prevSlide()"></i>
+        <i class="fas fa-arrow-right" onclick="nextSlide()"></i>
+      </div>
+    </div>
+    <!-- hero section end -->
+
+    <!-- banner section start -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img class="img-banner h-100" src="/img/banner/banner1.png" alt="" />
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-12">
+              <img class="img-banner" src="/img/banner/banner2.png" alt="" />
+            </div>
+            <div class="col-12">
+              <img
+                class="img-banner h-100"
+                src="/img/banner/banner3.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- banner section end -->
+
+    <!-- top cetegory section start -->
+    <div class="top-category-section">
+      <div class="container text-center">
+        <h1 class="font-weight-bold pb-1 mt-5">Top Categories</h1>
+        <p class="font-weight-light mb-5">
+          Explore our top categories for the best experience.
+        </p>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-6 text-center">
+            <div class="category-item mb-4 pt-5">
+              <img
+                class="w-50"
+                src="/img/category/category-1.png"
+                alt="Category 1"
+              />
+              <p class="font-weight-bold mt-3">
+                <a href="#" class="category-item-link">Browse All</a>
+              </p>
+              <p class="font-weight-bold font-size-small">(135 Item)</p>
+              <div class="hover-border mt-5"></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 text-center">
+            <div class="category-item mb-4 pt-5">
+              <img
+                class="w-50"
+                src="/img/category/category-3.png"
+                alt="Category 1"
+              />
+              <p class="font-weight-bold mt-3">
+                <a href="#" class="category-item-link">Browse All</a>
+              </p>
+              <p class="font-weight-bold font-size-small">(135 Item)</p>
+              <div class="hover-border mt-5"></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 text-center">
+            <div class="category-item mb-4 pt-5">
+              <img
+                class="w-50"
+                src="/img/category/category-2.png"
+                alt="Category 1"
+              />
+              <p class="font-weight-bold mt-3">
+                <a href="#" class="category-item-link">Browse All</a>
+              </p>
+              <p class="font-weight-bold font-size-small">(135 Item)</p>
+              <div class="hover-border mt-5"></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 text-center">
+            <div class="category-item mb-4 pt-5">
+              <img
+                class="w-50"
+                src="/img/category/category-1.png"
+                alt="Category 1"
+              />
+              <p class="font-weight-bold mt-3">
+                <a href="#" class="category-item-link">Browse All</a>
+              </p>
+              <p class="font-weight-bold font-size-small">(135 Item)</p>
+              <div class="hover-border mt-5"></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 text-center">
+            <div class="category-item mb-4 pt-5">
+              <img
+                class="w-50"
+                src="/img/category/category-2.png"
+                alt="Category 1"
+              />
+              <p class="font-weight-bold mt-3">
+                <a href="#" class="category-item-link">Browse All</a>
+              </p>
+              <p class="font-weight-bold font-size-small">(135 Item)</p>
+              <div class="hover-border mt-5"></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 text-center">
+            <div class="category-item mb-4 pt-5">
+              <img
+                class="w-50"
+                src="/img/category/category-1.png"
+                alt="Category 1"
+              />
+              <p class="font-weight-bold mt-3">
+                <a href="#" class="category-item-link">Browse All</a>
+              </p>
+              <p class="font-weight-bold font-size-small">(135 Item)</p>
+              <div class="hover-border mt-5"></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 text-center">
+            <div class="category-item mb-4 pt-5">
+              <img
+                class="w-50"
+                src="/img/category/category-2.png"
+                alt="Category 1"
+              />
+              <p class="font-weight-bold mt-3">
+                <a href="#" class="category-item-link">Browse All</a>
+              </p>
+              <p class="font-weight-bold font-size-small">(135 Item)</p>
+              <div class="hover-border mt-5"></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 text-center">
+            <div class="category-item mb-4 pt-5">
+              <img
+                class="w-50"
+                src="/img/category/category-3.png"
+                alt="Category 1"
+              />
+              <p class="font-weight-bold mt-3">
+                <a href="#" class="category-item-link">Browse All</a>
+              </p>
+              <p class="font-weight-bold font-size-small">(135 Item)</p>
+              <div class="hover-border mt-5"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- top cetegory section end -->
+
+    <!-- hurry us section start -->
+    <div class="container-fluid text-center p-5 hurry-up-wrap m-auto">
+      <h1 class="h2 font-weight-bold font-italic hurry-up-sub-heading">
+        Hurry Up!
+      </h1>
+      <h1 class="font-weight-bold hurry-up-heading">
+        Hot Deal! Sale Up To 50% off
+      </h1>
+      <p class="hurry-up-text">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo aliquid
+        nostrum aliquam iste quibusdam nam!
+      </p>
+      <div class="count-down-wrapper row">
+        <div class="day-wrap col-sm-3">
+          <div
+            class="num p-3 m-auto d-flex align-items-center justify-content-center"
+          >
+            <span class="day font-weight-bold">00</span>
+          </div>
+          <div class="text-dark font-weight-light">
+            <span class="">DAYS</span>
+          </div>
+        </div>
+        <div class="hours-wrap col-sm-3">
+          <div
+            class="num p-3 m-auto d-flex align-items-center justify-content-center"
+          >
+            <span class="hours font-weight-bold">00</span>
+          </div>
+          <div class="text-dark font-weight-light">
+            <span class="">HRS</span>
+          </div>
+        </div>
+        <div class="minutes-wrap col-sm-3">
+          <div
+            class="num p-3 m-auto d-flex align-items-center justify-content-center"
+          >
+            <span class="minutes font-weight-bold">00</span>
+          </div>
+          <div class="text-dark font-weight-light">
+            <span class="">MINS</span>
+          </div>
+        </div>
+        <div class="second-wrap col-sm-3">
+          <div
+            class="num p-3 m-auto d-flex align-items-center justify-content-center"
+          >
+            <span class="second font-weight-bold">00</span>
+          </div>
+          <div class="text-dark font-weight-light">
+            <span class="">SECS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br /><br />
+    <!-- hurry us section end -->
+
+    <!-- why chose us section start -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="chose-us-text">
+            Iure rerum est cumque mollitia voluptates a explicabo blanditiis,
+            quam nulla laudantium debitis sapiente deserunt, ex perspiciatis
+            veniam.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <p class="main-color font-weight-bold">// WHY CHOOSE US</p>
+          <h1 class="chose-us-heading">Get Extra Benifits.</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="row chose-us-info m-3 text-right">
+            <div class="col-10">
+              <h4 class="font-weight-bold">Lorem Ipsum</h4>
+              <p class="p-0 m-0 text-right">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
+                magnam.
+              </p>
+            </div>
+            <div class="col-2">
+              <i class="fa-solid fa-3x fa-leaf main-color"></i>
+            </div>
+          </div>
+          <div class="row chose-us-info m-3 text-right">
+            <div class="col-10">
+              <h4 class="font-weight-bold">Lorem Ipsum</h4>
+              <p class="p-0 m-0 text-right">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
+                magnam.
+              </p>
+            </div>
+            <div class="col-2">
+              <i class="fa-solid fa-3x fa-leaf main-color"></i>
+            </div>
+          </div>
+          <div class="row chose-us-info m-3 text-right">
+            <div class="col-10">
+              <h4 class="font-weight-bold">Lorem Ipsum</h4>
+              <p class="p-0 m-0 text-right">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
+                magnam.
+              </p>
+            </div>
+            <div class="col-2">
+              <i class="fa-solid fa-3x fa-leaf main-color"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 text-center">
+          <img class="" src="/img/fruits/2.png" alt="" />
+        </div>
+        <div class="col-lg-4">
+          <div class="row chose-us-info-right m-3 text-left">
+            <div class="col-2 m-0 texta">
+              <i class="fa-solid fa-3x fa-leaf main-color"></i>
+            </div>
+            <div class="col-10">
+              <h4 class="font-weight-bold">Lorem Ipsum</h4>
+              <p class="p-0 m-0">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
+                magnam.
+              </p>
+            </div>
+          </div>
+          <div class="row chose-us-info-right m-3 text-left">
+            <div class="col-2 m-0 texta">
+              <i class="fa-solid fa-3x fa-leaf main-color"></i>
+            </div>
+            <div class="col-10">
+              <h4 class="font-weight-bold">Lorem Ipsum</h4>
+              <p class="p-0 m-0">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
+                magnam.
+              </p>
+            </div>
+          </div>
+          <div class="row chose-us-info-right m-3 text-left">
+            <div class="col-2 m-0 texta">
+              <i class="fa-solid fa-3x fa-leaf main-color"></i>
+            </div>
+            <div class="col-10">
+              <h4 class="font-weight-bold">Lorem Ipsum</h4>
+              <p class="p-0 m-0">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
+                magnam.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- why chose us section end -->
+
+    <!-- any qs section start -->
+    <div
+      style="background-image: url(/img/fruits/bg_qs.jpg)"
+      class="any-qs text-center m-auto p-5"
+    >
+      <h1 class="mt-5 any-qs-text">ANY QUESTION YOU HAVE</h1>
+      <h1 class="any-qs-nomber">01406698430</h1>
+      <button class="mb-5 any-qs-btn text-uppercase font-weight-bold">
+        make a call
+      </button>
+      <button class="mb-5 any-qs-btn2 text-uppercase font-weight-bold">
+        contact us
+      </button>
+    </div>
+    <!-- any qs section end -->
+
+    <!-- footer start -->
+    <footer class="footer-wrap">
+      <div class="container-fluid p-5">
+        <div class="row">
+          <div class="footer-section col-lg-3 col-md-6">
+            <a class="footer-logo" href="#">
+              <img
+                class="pb-2"
+                src="/img/logo/logo.png"
+                alt="Your Logo"
+                width="120"
+              /> </a
+            ><br />
+            <p class="">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. In
+              facere tempora nihil ea illum nostrum quam recusandae eaque atque
+              exercitationem.
+            </p>
+            <i class="fa-solid fa-location-dot pr-2"></i
+            ><span>Ashulia, Saver, Dhaka</span><br />
+            <i class="fa-solid fa-location-dot pr-2"></i
+            ><span>+8801614143556</span><br />
+            <i class="fa-solid fa-location-dot pr-2"></i
+            ><span>salmanzihad9024@gmail.com</span>
+          </div>
+          <div class="footer-section col-lg-2 col-md-3">
+            <ul class="footer-menu">
+              <h4 class="font-weight-bold">Company</h4>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">All Products</a></li>
+              <li><a href="#">Location map</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-section col-lg-2 col-md-3">
+            <ul class="footer-menu">
+              <h4 class="font-weight-bold">Services</h4>
+              <li><a href="#">Order Tracking</a></li>
+              <li><a href="#">Wish List</a></li>
+              <li><a href="#">Log in</a></li>
+              <li><a href="#">My Account</a></li>
+              <li><a href="#">Terms and Condition</a></li>
+              <li><a href="#">Promotional Offers</a></li>
+            </ul>
+          </div>
+          <div class="footer-section col-lg-2 col-md-6">
+            <ul class="footer-menu">
+              <h4 class="font-weight-bold">Customer</h4>
+              <li><a href="#">Log in</a></li>
+              <li><a href="#">My Account</a></li>
+              <li><a href="#">Wish List</a></li>
+              <li><a href="#">Order Tracking</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-section col-lg-3 col-md-6">
+            <h4>Company</h4>
+            <p class="">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+              fuga voluptatum quod totam nihil ratione!
+            </p>
+            <div class="row">
+              <div class="col-10">
+                <input
+                  type="email"
+                  class="form-control d-inline"
+                  id="newsletterEmail"
+                  placeholder="Enter your email"
+                />
+              </div>
+              <div class="col-2">
+                <i class="fa-regular fa-paper-plane pr-2 d-inline nwsltr"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- copyright section start -->
+    <div class="copy-right-info container-fluid pl-5 pr-5">
+      <div class="row pt-3">
+        <div class="col-md-6 text-center float-md-left">
+          All Rights Reserved @ Company 2024
+        </div>
+        <div class="col-md-6">
+          <ul class="text-center float-md-right">
+            <li class="d-inline pr-3">
+              <a href="#" class="copy-right-info-msg">Terms & Conditions</a>
+            </li>
+            <li class="d-inline pr-3">
+              <a href="#" class="copy-right-info-msg">Claim</a>
+            </li>
+            <li class="d-inline">
+              <a href="#" class="copy-right-info-msg">Privacy & Policy</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- copyright section end -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/root.js"></script>
+    <script src="/js/responsive_menu.js"></script>
+    <script src="/js/home/hurry_up_countdown.js"></script>
+    <script src="/js/home/hero.js"></script>
+  </body>
+</html>

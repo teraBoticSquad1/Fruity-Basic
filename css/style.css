@@ -1,0 +1,441 @@
+/* all imports goes here */
+@import url("root.css");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+/* header part start */
+.fruity-header {
+  background-color: var(--bg-clr2);
+}
+.menu {
+  list-style-type: none;
+  position: relative;
+}
+.menu-item {
+  float: left;
+  padding: 5px 25px;
+  font-weight: bold;
+}
+.menu-item:hover .sub-menu {
+  top: 35px;
+  opacity: 1;
+  z-index: 999;
+}
+.menu-item > a {
+  text-decoration: none;
+  color: var(--black-clr);
+  transition: 0.2s all ease-in-out;
+}
+.menu-item > a:hover {
+  text-decoration: none;
+  color: var(--main-clr);
+}
+.sub-menu {
+  background-color: var(--white-clr);
+  border-top: 4px solid var(--main-clr);
+  list-style-type: none;
+  padding: 0;
+  z-index: 0;
+  position: absolute;
+  top: 150px;
+  opacity: 0;
+  transition: 0.3s;
+}
+.sub-menu > li > ul {
+  margin-left: 150px;
+  display: none;
+}
+.sub-menu > li:hover > ul {
+  display: block;
+  z-index: 999;
+}
+.sub-menu > li {
+  float: none;
+  width: 180px;
+}
+.menu-humberger {
+  display: none !important;
+}
+@media only screen and (max-width: 600px) {
+  .menu-humberger {
+    display: block !important;
+    transition: 0.3s all ease-in-out;
+  }
+  .menu-item {
+    float: none;
+    padding: 5px 25px;
+    font-weight: bold;
+  }
+  .menu {
+    margin-top: 15px !important;
+    padding-top: 15px;
+    background-color: var(--white-clr);
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    z-index: 1;
+    transition: 0.3s all ease-in-out;
+    transform: translateX(-300px);
+  }
+  .show {
+    transform: translateX(-15px);
+  }
+  .sub-menu {
+    background-color: var(--white-clr);
+    border-top: 0px solid var(--main-clr);
+    padding: 0;
+    z-index: 1;
+    position: static;
+    top: 0px;
+    opacity: 1;
+    transition: 0.3s;
+  }
+  .sub-menu > li > ul {
+    margin-left: 10px;
+    opacity: 1;
+    display: block;
+  }
+  .sub-menu > li:hover > ul {
+    z-index: 1;
+  }
+}
+/* header part end */
+
+/* hero section start */
+.slide{
+    position: relative;
+    display: none;
+}
+.active-slide{
+    display: block;
+}
+.image-wrap{
+    width: 100%;
+    height: 100vh;
+}
+.image{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    animation: fadeIn .3s ease-in-out;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.slider-content{
+    position: absolute;
+    top: 25%;
+    margin: 15px;
+    width: 30%;
+    margin-left: 120px;
+}
+.slider-content-right{
+    text-align: end;
+    right: 0;
+    margin-right: 120px;
+}
+.fa-arrow-left, .fa-arrow-right{
+    padding: 18px;
+    margin: 25px;
+    border: 1px solid var(--white-clr);
+    position: absolute;
+    top: 50%;
+    font-weight: bold;
+    cursor: pointer;
+}
+.fa-arrow-right:hover{
+    background-color: var(--main-clr);
+    color: var(--white-clr);
+}
+.fa-arrow-left:hover{
+    background-color: var(--main-clr);
+    color: var(--white-clr);
+}
+.fa-arrow-right{
+    right: 0;
+}
+.description, .main-heading, .para, .hero-btn{
+    opacity: 1;
+    transform: translateY(0);
+    animation: fadeUp ease-in-out;
+}
+.para{
+    animation-duration: 1s;
+    animation-delay: 0s;
+}
+.main-heading{
+    font-weight: bold;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+}
+.description{
+    animation-duration: 1.8s;
+    animation-delay: 0s;
+}
+.hero-btn{
+    font-weight: bold;
+    animation-duration: 2s;
+    animation-delay: 0s;
+}
+.hero-btn:hover{
+    border: 1px solid var(--main-clr);
+}
+@keyframes fadeUp {
+  0%{
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(80);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(100);
+  }
+}
+/* hero section end */
+
+
+/* banner part start */
+.img-banner{
+    height: 90%;
+    width: 100%;
+    margin: 25px;
+}
+/* banner part end */
+
+/* any question section start */
+.any-qs{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;   
+}
+.any-qs-btn, .any-qs-btn2{
+    outline: none;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    margin: 5px;
+}
+.any-qs-btn{
+    background-color: var(--main-clr);
+    color: var(--white-clr);
+    position: relative;
+    z-index: 20;
+    transition: 0.3s all ease-in-out;
+}
+.any-qs-btn2{
+    color: var(--white-clr);
+    border: 1px solid var(--white-clr);
+    background-color: transparent;
+    position: relative;
+    z-index: 20;
+}
+.any-qs-btn:hover{
+    color: var(--black-clr);
+}
+.any-qs-btn2::after{
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    background-color: transparent;
+    transition: 0.2s all ease-in-out;
+}
+.any-qs-btn2:hover::after{
+    width: 100%;
+    background-color: var(--main-clr);
+}
+.any-qs-btn::after{
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    background-color: transparent;
+    transition: 0.2s all ease-in-out;
+}
+.any-qs-btn:hover::after{
+    width: 100%;
+    background-color: var(--white-clr);
+}
+.any-qs-text{
+    color: var(--main-clr);
+    font-size: 15px;
+    font-weight: bold;
+    font-weight: bold;
+}
+.any-qs-nomber{
+    font-weight: bold;
+    font-size: 50px;
+    color: var(--white-clr);
+}
+/* any question section end */
+
+
+/* cetegory section start */
+.category-item{
+    border: 1px solid #ddd;
+    box-shadow: 1px 1px 3px 0px #dddd;
+}
+.category-item:hover .hover-border{
+    width: 100%;
+    background-color: var(--main-clr);
+}
+.category-item:hover .category-item-link{
+    color: var(--main-clr);
+}
+.hover-border{
+    width: 0%;
+    height: 4px;
+    background-color: var(--gray-clr);
+    transition: 0.5s all ease-in-out;
+}
+.category-item-link{
+    color: var(--black-clr);
+}
+.category-item-link:hover{
+    text-decoration: none;
+}
+/* cetegory section end */
+
+/* hurry us section start */
+.count-down-wrapper {
+    width: 500px;
+    margin: 0 auto;
+	text-align: center;
+}
+.day-wrap,
+.hours-wrap,
+.minutes-wrap,
+.second-wrap{
+    color: var(--black-clr);
+    text-align: center;
+}
+.num{
+    font-size: 25px;
+    margin-bottom: 10px !important;
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 100%;
+    background: var(--white-clr);
+}
+.the-time{
+    font-size: 40px;
+    color: greenyellow;
+}
+.hurry-up-sub-heading{
+    color: var(--main-clr);
+}
+.hurry-up-text{
+    width: 500px;
+    margin: 0 auto;
+}
+.hurry-up-wrap{
+    padding: 100px 0px 100px 0px  !important;
+    background-color: var(--section-bg-clr);
+}
+/* hurry us section end */
+
+/* why chose us section start */
+.chose-us-heading{
+    font-size: 50px;
+}
+.chose-us-text{
+    padding-right: 20px;
+    text-align: end;
+}
+.chose-us-info, .chose-us-info-right{
+    padding: 20px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px 0px #dddd;
+    border: 1px solid var(--shadow-clr);
+    transition: 0.3s all ease-in-out;
+}
+.chose-us-info:hover{
+    border-right: 5px solid var(--main-clr);  
+    box-shadow: 1px 1px 30px 0px #dddd;
+}
+.chose-us-info-right:hover{
+    border-left: 5px solid var(--main-clr);  
+    box-shadow: 1px 1px 30px 0px #dddd;
+}
+/* why chose us section end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer part start */
+.footer-menu{
+    list-style-type: none;
+}
+.footer-menu > li{
+    margin-top: 15px;
+    transition: 0.3s all ease-in-out;
+}
+.footer-menu>li>a{
+    text-decoration: none;
+    color: var(--black-clr);
+}
+.footer-menu>li:hover{
+    margin-left: 15px;
+}
+.footer-menu{
+    width: 190px !important;
+}
+.copy-right-info{
+    background-color: #071C1F;
+    color: var(--white-clr);
+}
+.copy-right-info-msg{
+    color: var(--white-clr);
+    transition: 0.3s all ease-in-out;
+}
+.copy-right-info-msg:hover{
+    text-decoration: none;
+    color: var(--main-clr);
+}
+.nwsltr{
+    background-color: var(--main-clr);
+    padding: 10px;
+    margin-top: 1px;
+    border-radius: 0px  8px  8px  0px;
+    margin-left: -50px;
+    position: absolute;
+}
+/* footer part end */
