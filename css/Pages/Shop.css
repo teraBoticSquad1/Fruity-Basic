@@ -7,7 +7,7 @@ font-family: "Open Sans";
 /* Header CSS Start Here */
 
 header{
-    background-image: url(image/13.jpg);
+    background-image: url(../../img/slider/13.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
