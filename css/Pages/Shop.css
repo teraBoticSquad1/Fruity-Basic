@@ -1,0 +1,787 @@
+body{
+background-color: #FFFFFF;
+margin: 0;
+font-family: "Open Sans";
+}
+
+/* Header CSS Start Here */
+
+header{
+    background-image: url(image/13.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.container{
+    display:flex;
+    height: 117.988px;
+    justify-content: space-between;
+}
+.logo{
+    width: 161.083px;
+    height: 43.932px;
+    margin-left: 80px;
+    /* border: 2px solid silver; */
+    /* background-color: aliceblue; */
+    border-radius: 10px;
+    cursor: pointer;
+}
+.logo img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+nav ul {
+   display: flex;
+   
+   /* flex-wrap: wrap; */
+ 
+}
+ 
+nav li{
+  list-style: none;
+  margin-left: 20px;
+}
+nav li:hover{
+    background-color: rgb(202, 201, 198);
+   
+   
+}
+
+
+nav > ul > li > a{
+    text-decoration: none;
+    color: rgb(103, 233, 157);
+    font-weight: 700;
+    /* color: #FFF; */
+    font-family: Rajdhani;
+    font-size: 16.736px;
+}
+
+
+nav > ul > li:hover > ul {
+    display: block;
+    position: absolute;
+    /* cursor: pointer; */
+    font-family: "Open Sans";
+   
+    
+}
+.drop_down{
+    display: none;
+    position:absolute;
+    background-color:rgb(238, 239, 240);
+    padding: 0px;
+    border-top: 4px solid;
+    border-image:linear-gradient(to right,rgb(135, 202, 47),green,rgb(135, 202, 47)); 
+   border-image-slice:1; 
+/* z-index: 2; */
+}
+.drop_down li{
+    padding-left: 2px;
+    margin: 2px;
+   width:210px;
+   margin-top: 20px;
+   
+}
+.drop_down a{
+    text-decoration: none;
+    color: black;
+    margin-left: 30px;
+  
+}
+.drop_down a:hover{
+
+    color:#80B500;
+}
+.drop_down1{
+    display: none;
+    /* display: flex; */
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+    background-color:white ;
+    border-top: 4px solid;
+    border-image: linear-gradient(to right,rgb(135, 202, 47),green,rgb(135, 202, 47)); 
+    border-image-slice: 1;  
+    margin-left: 0;
+}
+.drop_down1 a{
+  text-decoration: none;
+  color:black;
+}
+
+.drop_down1 a:hover{
+  
+    color:#80B500;
+  }
+
+nav > ul > li:hover >.drop_down1{
+    display:flex;
+    /* flex-wrap: wrap; */
+   
+    
+}
+.QUOTE{
+    color:#80B500;
+    font-family: "Open Sans";
+    cursor: pointer; 
+   width: 147.569px;
+  padding: 15.69px 31.04px 8.539px 31.38px;
+}
+
+.button :hover {
+   background-color: #3fee39;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 80px;
+    margin-top: 15px;
+}
+
+.details .search,
+.details .profile,
+.details .add-cart {
+    background-color: #fff;
+    /* padding: 5px;
+    height: 40px;
+    width: 40px;  */
+    display: flex;
+    width: 52.3px;
+    height: 52.3px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 16.736px 33.472px 0px rgba(7, 28, 31, 0.10);
+    margin-right: 10px; 
+}
+
+.details .add-cart {
+    margin-right: 0; 
+}
+
+.details i {
+    margin-left: 10px;
+}
+
+.details .search:hover,
+.details .profile:hover,
+.details .add-cart:hover {
+    background-color: #71f76c;
+    cursor: pointer;
+}
+
+.header-info{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 200px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.side-bar1 p{
+
+    color:rgba(128, 181, 0, 1);
+}
+.side-bar1 .One{
+    color: #fff;
+    font-weight: 700;
+    font-size: 3em;
+    font-family: "Open Sans";
+}
+.side-bar2 nav{
+    display: flex;
+    /* border-right: 2px solid red; */
+}
+.side-bar2  a{
+    text-decoration: none;
+    color: #8CB2B2;
+    font-size: 16.736px;
+    font-weight: 700;
+  
+}
+.side-bar2 li {
+
+    list-style-type: none;
+    margin-left:10px ;
+}
+
+.side-bar2 li:hover a {
+    color: #80B500;
+}
+.side-bar2 .fixed a{
+    border-left: 2px solid #8CB2B2;
+    color:#80B500;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------
+                                                              Header CSS END
+---------------------------------------------------------------------------------------------------------------------------------------------*/
+.sidebar{
+    width:fit-content;
+    display: flex;
+}
+
+.sidebar-box-1{
+
+    height:393.618px;;
+    width:387.018px;
+    height:max-content;
+    margin-top:77.76px;
+    margin-left:25px;
+    border: 2.092px solid #EDEDED;
+}
+.sidebar-box-2,
+.sidebar-box-3,
+.sidebar-box-4,
+.sidebar-box-5,
+.sidebar-box-6,
+.sidebar-box-7,
+.sidebar-box-8{
+    width: 387.018px;
+    height:max-content;
+    margin-top:77.76px;
+    margin-left:25px;
+    border: 2.092px solid #EDEDED;
+
+    
+
+}
+.sidebar-box-8 img{
+    width:387.018px;
+ 
+  
+}
+.sidebar-details-box{
+    margin-left: 20px;
+    margin-right: 20px;
+
+
+}
+.sidebar-box-3{
+   
+    height: 535.549px;
+    margin-bottom: 27.2px;
+}
+
+.Sidebar-card-1,
+.Sidebar-card-2,
+.Sidebar-card-3
+{
+    width: 314.844px;
+    height: 121.3353px;
+    display: flex;
+    justify-content:flex-start;
+    margin-left: 38.7px;
+    margin-right: 33.47px;
+
+    margin-top: 30px;
+   
+    /* border: 2px solid red; */
+
+}
+.Sidebar-card-1,
+.Sidebar-card-2{
+    border-bottom: 1.046px solid #E6ECF0;
+    /* margin-top: 30px; */
+  
+
+}
+
+.sidebar-img img{
+    width: 94.139px;
+    height: 94.139px;
+    background-color:#F9F9F9;
+    /* border: 2px solid red; */
+}
+
+.sidebar-star{
+    color: #FFB800;
+    width: 14.494px;
+    height: 13px;
+    display: flex;
+    justify-content:first baseline
+    /* margin-top: 35px; */
+
+
+}
+
+.card-datils{
+    margin-top:9.41px;
+    margin-left: 20.92px;
+    height:80px;
+
+    /* border: 2px solid blue; */
+
+}
+.card-datils h1{
+    margin-top: 0px;
+    color: #80B500;
+    font-size: 14.644px;
+
+}
+.card-datils p{
+    font-family: Rajdhani;
+    font-size: 16.736px;
+    font-style: normal;
+    font-weight: 700;
+}
+.card-datils del{
+    font-size:11.715px;
+}
+
+/* 
+.button-box {
+    display:inline-flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+#search-input {
+    flex: 1;
+    padding: 8px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+} */
+
+/* #no-border-button2 {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    width:50px;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 0px;
+    margin-left: 0px;
+    cursor: pointer;
+} */
+
+.sidebar-info1 p{
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    color: #071C1F;
+
+    font-family: Rajdhani;
+    font-size: 20.92px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: capitalize;
+    /* cursor: pointer; */
+}
+
+.info1-details-1,
+.info1-details-2,
+.info1-details-3,
+.info1-details-4,
+.info1-details-5,
+.info1-details-6,
+.info1-details-7{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.info1-details-1 p:hover,
+.info1-details-2 p:hover,
+.info1-details-3 p:hover,
+.info1-details-4 p:hover,
+.info1-details-5 p:hover,
+.info1-details-6 p:hover,
+.info1-details-7 p:hover{
+    color:#80B500;
+    cursor: pointer;
+}
+
+.info1-details-1,
+.info1-details-2,
+.info1-details-3,
+.info1-details-4,
+.info1-details-5,
+.info1-details-6,
+.info1-details-7 i{
+color: #8CB2B2;
+font-family: "Font Awesome 5 Free";
+font-size: 14.644px;
+font-style: normal;
+font-weight: 900;
+/* line-height: 14.644px;  */
+}
+.info1-subdetails1 p{
+
+    margin-top: 0px;
+    color: #071C1F;
+    font-family: "Open Sans";
+    font-size: 14.644px;
+    font-style: normal;
+    font-weight: 700;
+  
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------
+                                                            Main section CSS Start
+----------------------------------------------------------------------------------------------------------------------------------------------*/
+.menu-container{
+    grid-template-rows:repeat(1,1fr) /* Set to one column for smaller screens */
+}
+
+.box1,
+.sub_box {
+    width: 100%; /* Set to 100% for smaller screens */
+}
+
+.box1 img{
+    width: 100%;
+    height: auto; /* Change to auto for responsive height */
+}
+
+.box2,
+.box3 {
+    height: auto; /* Change to auto for responsive height */
+}
+
+/* Media Query for medium screens */
+@media only screen and (max-width: 992px) {
+
+.menu-container{
+    grid-template-columns:repeat(2,1fr) /* Set to one column for smaller screens */
+}
+
+.box1,
+.sub_box {
+    width: 100%; /* Set to 100% for smaller screens */
+}
+
+.box1 img {
+    width: 100%;
+    height: auto; /* Change to auto for responsive height */
+}
+
+.box2,
+.box3 {
+    height: auto; /* Change to auto for responsive height */
+}
+}
+
+
+h3 {
+margin-top: 20px; /* Add margin to create space between "Our products" and .content */
+
+
+}
+
+
+.menu-container{
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:25px;
+    padding: 10px;
+ }
+ .food-box{
+
+width: 247.545px;
+height: 399.831px;
+border: 2px solid rgba(192, 192, 192, 0.322);
+background-color: #FFFFFF;
+ }
+
+ .food-box:hover {
+    cursor: pointer;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1); /* Add box shadow on hover */
+}
+ .food{
+    width:247.545px;
+    height: 243.361px;
+    background-color: #F8F8F8;
+    
+     /* border: 2px solid silver; */
+     /* margin: 10px; */
+     /* background-color:rgba(247, 245, 235, 1); */
+     /* border-radius: 10px; */
+ }
+ .food:hover{
+     cursor: pointer;
+ }
+ .food img{
+     width: 100%;
+     height: 60%;
+ }
+ .food-info{
+
+    text-align: center;
+  
+ }
+.food-info p{
+    color: #071C1F;
+    text-align: center;
+    font-family: Rajdhani;
+    font-size: 16.736px;
+    font-style: normal;
+    font-weight: 700;
+  
+     
+ } 
+.star{
+    color: #FFB800;
+    height: 13px;
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+
+}
+
+.sidebar-star-1:hover,
+.sidebar-star-2:hover,
+.sidebar-star-3:hover,
+.sidebar-star-4:hover,
+.sidebar-star-5:hover,
+.star-1:hover,
+.star-2:hover,
+.star-3:hover,
+.star-4:hover,
+.star-5:hover,
+.food-info p:hover{
+    cursor: pointer;
+    color:#80B500;
+
+}
+.food-info h1{
+    color:#80B500;
+}
+
+del{
+    color:#afc974;
+    font-family: "Open Sans";
+    font-size: 20.92px;
+}
+/*----------------------------------------------------------------------------------------------------------------------------------------------
+                                                            Main section CSS End
+----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------
+                                                              Footer CSS Start
+----------------------------------------------------------------------------------------------------------------------------------------------*/
+footer{
+    background-color:rgba(255, 255, 255, 1)
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(250, 245, 238);
+    width:fit-content;
+    margin-left:20px;
+    margin-right: 20px;
+    /* border: 2px solid red; */  /*(For Working purposse0*/
+    
+}
+
+.footer-info,
+.company,
+.serveices,
+.customer-care,
+.newslwtter{
+    width:20%;  
+
+}
+
+.footer-logo{
+    width:110px;
+    height: 50px;
+    /* margin-left: 80px; */
+    /* border: 2px solid silver; */
+    /* background-color: aliceblue; */
+    border-radius: 10px;
+    cursor: pointer; 
+}
+.footer-logo img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+
+}
+.footer-general-info,
+.location-box,
+.cell-box,
+.msg-box{
+    margin-left: 5px;
+}
+/* p{
+    font-size: 1em;
+    font-family: "Open Sans";
+} */
+.location-box,
+.cell-box,
+.msg-box{
+    display: flex;
+    align-items: center;
+   
+}
+
+.inf
+{
+    margin-left:5px;
+}
+.inf p{
+    text-wrap:balance;
+}
+.info{
+   margin-left:0; 
+   /* border: 2px solid red; *//*(For Working purposse0*/
+   justify-content: first baseline;
+   
+  
+}
+
+.info h2{
+    margin-left:0; 
+  
+
+}
+.footer-icon{
+    display: flex;
+}
+.fb,
+.Twt,
+.Youtube,
+.linkin{
+    /* background-color: #fff; */
+    padding: 5px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    margin-right: 10px; 
+}
+.fb :hover,
+.Twt :hover,
+.Youtube :hover,
+.linkin:hover,
+.cell-box .cell:hover{
+    cursor: pointer;
+    color: #71f76c;
+    transition: 1s all ease-in;
+    font-weight: 700;
+}
+
+.footer-menue{
+    display: flex;
+    flex-direction:row;
+    margin-left: 30px;
+    /* justify-content: space-between; */
+
+
+}
+.footer-menue li{
+  list-style-type: none;
+  margin-top:20px;
+}
+.footer-menue a{
+    text-decoration: none;
+    color:black;
+    font-weight: 1em;
+    
+    
+}
+.footer-menue ul li :hover{
+    color: #71f76c;
+    transition: 1s all ease-in;
+}
+.mail-box{
+    display:flex;
+    /* flex-direction:row; */
+    /* justify-content: ; */
+    height: 50px;
+    width:202px;
+    /* border:5px solid red; */
+    
+}
+
+.email-form input{
+
+
+    width:172px;
+    height:50px;
+    padding: 0px;
+    margin: 0px;
+    border: 1px solid #E4ECF2;
+
+    /* padding: 10px; */
+    /* margin-bottom: 20px; */
+    /* border: 1px solid#ce2d10; */
+}
+
+.email-form input:focus{
+
+    outline:1px solid #80B500;
+}
+
+.button-box button{
+    background-color:#80B500;
+    color: #fff;
+    border:none;
+    cursor: pointer;
+    height:52px;
+    padding: 0px;
+    margin: 0px;
+    width:30px;
+    /* padding-left: 0px; */
+    margin-left: 0px;
+    /* margin-left: 4px; */
+}
+
+
+ #no-border-button:hover {
+    background-color:#071C1F;
+    border:none;
+}
+.newslwtter img{
+    /* background: url(image/4cea100c00837a72ad1fc336d5e7b151.png), lightgray 0px 0px / 100% 100% no-repeat; */
+    height: 43.932px;
+    width: 250px;
+    margin-right:5px;
+}
+#footer{
+    background-color: rgba(7, 28, 31, 1);
+    height: 93.292px;
+    display: flex;
+    justify-content: space-between;
+    /* padding:15px; */
+   /* 
+    /* text-align: center; */
+  }
+  #footer h2{
+      /* color:#fff; */
+      font-size: 16.736px;
+      /* font-weight: 400; */
+       color:#fff;
+  
+  }
+  .footer2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+  }
+  #info2 > p{
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 38.7px;
+    color:#fff;
+    text-align: right;
+    font-family: Rajdhani;
+    font-size: 16.736px;
+    font-style: normal;
+
+
+  }
