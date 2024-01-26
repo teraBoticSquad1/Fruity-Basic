@@ -105,13 +105,15 @@ nav > ul > li:hover >.drop_down2{
     background-color: #22af1d; /* Adjust background color on hover */
     color:white;
 }
-.content {
+/* .content {
     margin-left: 90px;
     width: 1200px;
     height: 550px;
     position:relative;
-    display: flex;
+    /* display: flex; */
     /* flex-wrap: wrap; */
+   /* display:grid;
+    grid-template-rows: repeat(1 1fr);
     z-index: 1; 
 }
 
@@ -172,8 +174,117 @@ nav > ul > li:hover >.drop_down2{
     transform:scale(1.1);
     cursor:pointer;
     transform-origin:center;
+} */
+/* General styles for larger screens */
+.content {
+    margin-left: 10px;
+    width: 100%; /* Change to 100% */
+    height: auto; /* Change to auto */
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Use grid-template-columns instead of grid-template-rows */
+    gap: 15px; /* Add gap between columns */
+    z-index: 1;
 }
 
+.box1 {
+    border: 2px solid silver;
+    width: 100%; /* Change to 100% */
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.box1 img {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transition: transform 3s ease-in-out;
+}
+
+.box1 img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transform-origin: center;
+}
+
+.sub_box {
+    /* display: flex;
+    flex-direction: column; */
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    gap: 15px;
+}
+
+.box2,
+.box3 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.box2 img,
+.box3 img {
+    width: 100%;
+    height: 100%;
+    transition: transform 3s ease-in-out;
+    object-fit: cover;
+}
+
+.box2 img:hover,
+.box3 img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transform-origin: center;
+}
+
+/* Media Query for smaller screens */
+@media only screen and (max-width: 688px) {
+    .content,
+    .menu-container{
+        grid-template-rows:repeat(1,1fr) /* Set to one column for smaller screens */
+    }
+
+    .box1,
+    .sub_box {
+        width: 100%; /* Set to 100% for smaller screens */
+    }
+
+    .box1 img{
+        width: 100%;
+        height: auto; /* Change to auto for responsive height */
+    }
+
+    .box2,
+    .box3 {
+        height: auto; /* Change to auto for responsive height */
+    }
+}
+ /* Media Query for medium screens */
+@media only screen and (max-width: 992px) {
+    .content,
+    .menu-container{
+        grid-template-columns:repeat(2,1fr) /* Set to one column for smaller screens */
+    }
+
+    .box1,
+    .sub_box {
+        width: 100%; /* Set to 100% for smaller screens */
+    }
+
+    .box1 img {
+        width: 100%;
+        height: auto; /* Change to auto for responsive height */
+    }
+
+    .box2,
+    .box3 {
+        height: auto; /* Change to auto for responsive height */
+    }
+}
+
+ 
 h3 {
     margin-top: 20px; /* Add margin to create space between "Our products" and .content */
 }
@@ -220,8 +331,11 @@ h3 {
    
 }
 .menu-container{
-   display: flex;
-   flex-wrap: wrap;
+   /* display: flex;
+   flex-wrap: wrap; */
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   gap:5px;
    padding: 10px;
 }
 .food{
