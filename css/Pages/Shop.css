@@ -14,7 +14,7 @@ header{
 }
 .container{
     display:flex;
-    height: 117.988px;
+    /* height: 117.988px; */
     justify-content: space-between;
 }
 .logo{
@@ -125,16 +125,24 @@ nav > ul > li:hover >.drop_down1{
    
     
 }
-.QUOTE{
-    color:#80B500;
+button{
+    background-color:#80B500;
+    color:#F8F8F8;
+    font-weight: 700;
     font-family: "Open Sans";
     cursor: pointer; 
-   width: 147.569px;
-  padding: 15.69px 31.04px 8.539px 31.38px;
+    width: 147.569px;
+    height: 50px;
+    margin-top: 20px;
+   /* padding: 15.69px 31.04px 8.539px 31.38px; */
 }
 
-.button :hover {
-   background-color: #3fee39;
+button:hover {
+   background-color:#5a7e06;
+}
+.button-box input:focus{
+
+    outline:1px solid #80B500;
 }
 
 .details {
@@ -251,6 +259,88 @@ nav > ul > li:hover >.drop_down1{
     
 
 }
+.sidebar-button,
+.sidebar-button2{
+
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 60px;
+    margin-top: 20px;
+
+}
+.sidebar-button button{
+     background-color: #FAF5EE;
+    color:black;
+    font-weight: 700;
+    font-family: "Open Sans";
+    cursor: pointer; 
+    /* width:fit-content; */
+    height: 50px;
+    min-width: 60px;
+    max-width:fit-content;
+   
+    
+ 
+    
+   /* padding: 15.69px 31.04px 8.539px 31.38px; */
+}
+
+button:hover {
+   background-color:#5a7e06;
+   color:#F8F8F8;
+}
+
+.sidebar-button2 button{
+    /* background-color: #FAF5EE;
+   color:black;
+   font-weight: 700;
+   font-family: "Open Sans";
+   cursor: pointer;  */
+   /* width:fit-content; */
+   height: 30px;
+   min-width: 60px;
+   max-width:fit-content;
+  
+   
+  /* padding: 15.69px 31.04px 8.539px 31.38px; */
+}
+.sidebar-button2 :hover{
+    cursor: pointer;
+    border: 2px solid #80B500;
+   
+    padding:5px;
+}
+.sidebar-button2 .red{
+    background-color: red;
+}
+.sidebar-button2 .green{
+    background-color:green;
+}
+.sidebar-button2 .blue{
+    background-color:blue;
+}
+.sidebar-button2 .white{
+    background-color:white;
+}
+.sidebar-button2 .black{
+    background-color:black;
+}
+
+.sidebar-button2 .yellow{
+    background-color:yellow;
+}
+.sidebar-button2 .purpel{
+    background-color:purple;
+}
+.sidebar-button2 .pink{
+    background-color:pink;
+}
+.sidebar-button2 .orange{
+    background-color:orange;
+}
+
+
+
 .sidebar-box-8 img{
     width:387.018px;
  
@@ -334,34 +424,38 @@ nav > ul > li:hover >.drop_down1{
     font-size:11.715px;
 }
 
-/* 
+
 .button-box {
     display:inline-flex;
     align-items: center;
-    margin-left: 50px;
+    margin: 50px;
+    width: 300px;
+    /* border: 2px solid red; */
 }
 
 #search-input {
     flex: 1;
     padding: 8px;
-    margin-right: 5px;
+    background-color:  #FAF5EE;;
+    /* margin-right: 5px; */
     border: 1px solid #ccc;
-    border-radius: 4px;
+    /* border-radius: 4px; */
     box-sizing: border-box;
-} */
+    height: 70px;
+}
 
-/* #no-border-button2 {
-    background-color: #4CAF50;
+#no-border-button2 {
+    background-color:#80B500;
     color: white;
     padding: 10px 15px;
     width:50px;
-    height: 30px;
+    height: 70px;
     border: none;
-    border-radius: 4px;
+    /* border-radius: 4px; */
     margin-top: 0px;
     margin-left: 0px;
     cursor: pointer;
-} */
+ }
 
 .sidebar-info1 p{
     /* width: 100%; */
@@ -514,8 +608,10 @@ background-color: #FFFFFF;
  }
  .food img{
      width: 100%;
-     height: 60%;
- }
+     
+    height:100%;
+     /* border: 2px solid red; */
+    }
  .food-info{
 
     text-align: center;
@@ -579,9 +675,7 @@ footer{
     justify-content: space-between;
     background-color: rgb(250, 245, 238);
     width:fit-content;
-    margin-left:20px;
-    margin-right: 20px;
-    /* border: 2px solid red; */  /*(For Working purposse0*/
+    /* border: 2px solid red;*/  /* For Working purposse */
     
 }
 
@@ -591,6 +685,7 @@ footer{
 .customer-care,
 .newslwtter{
     width:20%;  
+    /*border: 2px solid rgb(0, 255, 21);*/  /* purposse*/
 
 }
 
@@ -635,17 +730,22 @@ footer{
     text-wrap:balance;
 }
 .info{
-   margin-left:0; 
-   /* border: 2px solid red; *//*(For Working purposse0*/
-   justify-content: first baseline;
+   margin-left:0px; 
+    /* border: 2px solid red; (For Working purposse0 */
+   /* justify-content: first baseline; */
    
   
 }
 
+
 .info h2{
-    margin-left:0; 
+    margin-left:40px; 
   
 
+}
+
+.footer-menue2{
+    margin-left: 40px;
 }
 .footer-icon{
     display: flex;
@@ -677,7 +777,10 @@ footer{
 .footer-menue{
     display: flex;
     flex-direction:row;
-    margin-left: 30px;
+    padding: 0px;
+    margin-left: 0px;
+    /* border: 2px solid red; */
+    /* margin-left: 30px; */
     /* justify-content: space-between; */
 
 
@@ -685,23 +788,27 @@ footer{
 .footer-menue li{
   list-style-type: none;
   margin-top:20px;
+  
 }
+
 .footer-menue a{
     text-decoration: none;
     color:black;
     font-weight: 1em;
-    
+    margin-left: 0px;
+    padding-left: 0px;
     
 }
 .footer-menue ul li :hover{
     color: #71f76c;
     transition: 1s all ease-in;
 }
+
 .mail-box{
     display:flex;
     /* flex-direction:row; */
     /* justify-content: ; */
-    height: 50px;
+    height: 70px;
     width:202px;
     /* border:5px solid red; */
     
@@ -711,9 +818,9 @@ footer{
 
 
     width:172px;
-    height:50px;
+    height:70px;
     padding: 0px;
-    margin: 0px;
+    margin:0px;
     border: 1px solid #E4ECF2;
 
     /* padding: 10px; */
@@ -726,12 +833,12 @@ footer{
     outline:1px solid #80B500;
 }
 
-.button-box button{
+.button-box2 button{
     background-color:#80B500;
     color: #fff;
     border:none;
     cursor: pointer;
-    height:52px;
+    height:70px;
     padding: 0px;
     margin: 0px;
     width:30px;
@@ -748,7 +855,7 @@ footer{
 .newslwtter img{
     /* background: url(image/4cea100c00837a72ad1fc336d5e7b151.png), lightgray 0px 0px / 100% 100% no-repeat; */
     height: 43.932px;
-    width: 250px;
+    width: 220px;
     margin-right:5px;
 }
 #footer{
@@ -757,7 +864,7 @@ footer{
     display: flex;
     justify-content: space-between;
     /* padding:15px; */
-   /* 
+   
     /* text-align: center; */
   }
   #footer h2{
