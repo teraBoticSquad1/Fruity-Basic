@@ -2,6 +2,7 @@ body{
 background-color: #FFFFFF;
 margin: 0;
 font-family: "Open Sans";
+
 }
 
 /* Header CSS Start Here */
@@ -11,11 +12,32 @@ header{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+  
+    text-align: center;
+    position: relative;
+    padding: 10px;
+    z-index: 1;
+    
 }
 .container{
+   
+    background-image: url(../../img/slider/13.jpg);
+    background-size: cover;
+    /* background-position:center;*/
+    background-repeat: no-repeat;
+  
+
     display:flex;
     /* height: 117.988px; */
     justify-content: space-between;
+    text-align: center;
+
+   
+    padding: 21px;
+    
+    position: sticky;
+    top: 0; /* You can adjust this value according to your layout */
+    z-index: 2; /* Ensure the header stays above other elements */
 }
 .logo{
     width: 161.083px;
@@ -232,6 +254,7 @@ button:hover {
 .sidebar{
     width:fit-content;
     display: flex;
+    
 }
 
 .sidebar-box-1{
