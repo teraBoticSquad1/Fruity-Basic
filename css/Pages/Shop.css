@@ -36,8 +36,8 @@ header{
     padding: 21px;
     
     position: sticky;
-    top: 0; /* You can adjust this value according to your layout */
-    z-index: 2; /* Ensure the header stays above other elements */
+    top: 0; 
+    z-index: 2; 
 }
 .logo{
     width: 161.083px;
@@ -552,45 +552,44 @@ font-weight: 900;
 
 .box1,
 .sub_box {
-    width: 100%; /* Set to 100% for smaller screens */
+    width: 100%; 
 }
 
 .box1 img{
     width: 100%;
-    height: auto; /* Change to auto for responsive height */
+    height: auto; 
 }
 
 .box2,
 .box3 {
-    height: auto; /* Change to auto for responsive height */
-}
+    height: auto; }
 
 /* Media Query for medium screens */
 @media only screen and (max-width: 992px) {
 
 .menu-container{
-    grid-template-columns:repeat(2,1fr) /* Set to one column for smaller screens */
+    grid-template-columns:repeat(2,1fr);
 }
 
 .box1,
 .sub_box {
-    width: 100%; /* Set to 100% for smaller screens */
+    width: 100%; 
 }
 
 .box1 img {
     width: 100%;
-    height: auto; /* Change to auto for responsive height */
+    height: auto; 
 }
 
 .box2,
 .box3 {
-    height: auto; /* Change to auto for responsive height */
+    height: auto; 
 }
 }
 
 
 h3 {
-margin-top: 20px; /* Add margin to create space between "Our products" and .content */
+margin-top: 20px; 
 
 
 }
@@ -614,7 +613,7 @@ background-color: #FFFFFF;
 
  .food-box:hover {
     cursor: pointer;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1); /* Add box shadow on hover */
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1); 
 }
  .food{
     width:247.545px;
