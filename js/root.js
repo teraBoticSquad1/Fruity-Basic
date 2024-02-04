@@ -13,16 +13,6 @@ function prevSlide() {
   index = (index - 1 + slide.length) % slide.length;
   slide[index].classList.add("active-slide");
 }
-var menuHumberger = document.querySelectorAll(".menu-humberger");
-var menu = document.querySelectorAll(".menu");
-menuHumberger[0].addEventListener("click", function () {
-  if (menuHumberger[0].classList.contains("fa-times")) {
-    menuHumberger[0].classList.replace("fa-times", "fa-bars");
-  } else {
-    menuHumberger[0].classList.replace("fa-bars", "fa-times");
-    }
-    menu[0].classList.toggle("show");
-});
 
 // hurry up counter
 var year = 2025;
