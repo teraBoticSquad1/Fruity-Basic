@@ -6,54 +6,204 @@
     <title>Fruity Basic</title>
     <!-- linking bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,600,700"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.6.3/css/ionicons.min.css"
+    />
     <!-- style.css -->
+    <link rel="stylesheet" href="css/menu.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-- header start -->
-    <header class="fruity-header">
+    <header class="header">
       <div class="container">
-        <div class="row">
-          <div class="col-2">
-            <a class="navbar-brand" href="">
-              <img src="img/logo/logo.png" alt="Your Logo" width="120" />
-            </a>
+        <div class="wrapper">
+          <div class="header-item-left">
+            <img src="img/logo/logo.png" alt="Logo" class="Fruitylogo" />
           </div>
-          <div class="col-7">
-            <div class="menu-wrap">
-              <ul class="menu">
-                <li class="menu-item"><a href="#">Home+</a></li>
-                <li class="menu-item"><a href="#">About+</a></li>
-                <li class="menu-item"><a href="Pages/Shop.html">Shop+</a></li>
-                <li class="menu-item"><a href="#">News+</a></li>
-                <ul class="sub-menu">
-                  <li class="menu-item"><a href="#">Link to Be</a></li>
-                  <li class="menu-item"><a href="#">Link to Be</a></li>
-                  <li class="menu-item"><a href="#">Link to Be</a></li>
-                  <li class="menu-item"><a href="#">Link to Be</a></li>
-                  <li class="menu-item"><a href="#">Link to Be</a></li>
-                </ul>
-                <li class="menu-item"><a href="#">Team+</a></li>
-                <li class="menu-item"><a href="#">Contact</a></li>
+          <div class="header-item-center">
+            <div class="overlay"></div>
+            <nav class="menu">
+              <div class="menu-mobile-header">
+                <button type="button" class="menu-mobile-arrow">
+                  <i class="ion ion-ios-arrow-back"></i>
+                </button>
+                <div class="menu-mobile-title"></div>
+                <button type="button" class="menu-mobile-close">
+                  <i class="ion ion-ios-close"></i>
+                </button>
+              </div>
+              <ul class="menu-section">
+                <li><a href="#">Home</a></li>
+                <li class="menu-item-has-children">
+                  <a href="#"
+                    >What's New <i class="ion ion-ios-arrow-down"></i
+                  ></a>
+                  <div class="menu-subs menu-mega menu-column-4">
+                    <div class="list-item text-center">
+                      <a href="#">
+                        <img
+                          src="img/apple.png"
+                          class="responsive"
+                          alt="New Product"
+                        />
+                        <h4 class="title">Apple</h4>
+                      </a>
+                    </div>
+                    <div class="list-item text-center">
+                      <a href="#">
+                        <img
+                          src="img/Cherry.png"
+                          class="responsive"
+                          alt="New Product"
+                        />
+                        <h4 class="title">Cherry</h4>
+                      </a>
+                    </div>
+                    <div class="list-item text-center">
+                      <a href="#">
+                        <img
+                          src="img/Tangerine.png"
+                          class="responsive"
+                          alt="New Product"
+                        />
+                        <h4 class="title">Tangerine</h4>
+                      </a>
+                    </div>
+                    <div class="list-item text-center">
+                      <a href="#">
+                        <img
+                          src="img/blackberry.png"
+                          class="responsive"
+                          alt="New Product"
+                        />
+                        <h4 class="title">Blackberry</h4>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="menu-item-has-children">
+                  <a href="#"
+                    >Category <i class="ion ion-ios-arrow-down"></i
+                  ></a>
+                  <div class="menu-subs menu-mega menu-column-4">
+                    <div class="list-item">
+                      <h4 class="title">Men's Fashion</h4>
+                      <ul>
+                        <li><a href="#">Product List</a></li>
+                        <li><a href="#">Product List</a></li>
+                        <li><a href="#">Product List</a></li>
+                        <li><a href="#">Product List</a></li>
+                      </ul>
+                      <h4 class="title">Kid's Fashion</h4>
+                      <ul>
+                        <li><a href="#">Product List</a></li>
+                        <li><a href="#">Product List</a></li>
+                        <li><a href="#">Product List</a></li>
+                        <li><a href="#">Product List</a></li>
+                      </ul>
+                    </div>
+                    <div class="list-item">
+                      <h4 class="title">Women's Fashion</h4>
+                      <ul>
+                        <li><a href="#">Product List</a></li>
+                        <li><a href="#">Product List</a></li>
+                        <li><a href="#">Product List</a></li>
+                        <li><a href="#">Product List</a></li>
+                      </ul>
+                      <h4 class="title">Health & Beauty</h4>
+                      <ul>
+                        <li><a href="#">Product List</a></li>
+                        <li><a href="#">Product List</a></li>
+                        <li><a href="#">Product List</a></li>
+                        <li><a href="#">Product List</a></li>
+                      </ul>
+                    </div>
+                    <div class="list-item">
+                      <h4 class="title">Home & Lifestyle</h4>
+                      <ul>
+                        <li><a href="#">Product List</a></li>
+                        <li><a href="#">Product List</a></li>
+                        <li><a href="#">Product List</a></li>
+                        <li><a href="#">Product List</a></li>
+                        <li><a href="#">Product List</a></li>
+                        <li><a href="#">Product List</a></li>
+                        <li><a href="#">Product List</a></li>
+                        <li><a href="#">Product List</a></li>
+                        <li><a href="#">Product List</a></li>
+                      </ul>
+                    </div>
+                    <div class="list-item">
+                      <img
+                        src="img/fruits/Cranberry.png"
+                        class="responsive"
+                        alt="Shop Product"
+                      />
+                      <img
+                        src="img/fruits/DragonFruit.png"
+                        class="responsive"
+                        alt="Shop Product"
+                      />
+                    </div>
+                  </div>
+                </li>
+                <li class="menu-item-has-children">
+                  <a href="#"
+                    >Articles <i class="ion ion-ios-arrow-down"></i
+                  ></a>
+                  <div class="menu-subs menu-column-1">
+                    <ul>
+                      <li><a href="#">Article One</a></li>
+                      <li><a href="#">Article Two</a></li>
+                      <li><a href="#">Article Three</a></li>
+                      <li><a href="#">Article Four</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="menu-item-has-children">
+                  <a href="#"
+                    >Accounts <i class="ion ion-ios-arrow-down"></i
+                  ></a>
+                  <div class="menu-subs menu-column-1">
+                    <ul>
+                      <li><a href="#">Login and Register</a></li>
+                      <li><a href="#">Help and Question</a></li>
+                      <li><a href="#">Privacy and Policy</a></li>
+                      <li><a href="#">Term of Cookies</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">Contact</a></li>
               </ul>
-            </div>
+            </nav>
           </div>
-          <div class="col-3">
-            <div class="row d-grid justify-content-center align-items-center">
-              <div class="col-4">
-                <button class="any-qs-btn menu-btnnn">Get A Quite</button>
-              </div>
-              <div class="col-2 header-icons m-1 pb-2 pt-2">
-                <i class="fa fa-search"></i>
-              </div>
-              <div class="col-2 header-icons m-1 pb-2 pt-2">
-                <i class="fa fa-user"></i>
-              </div>
-              <div class="col-2 header-icons m-1 pb-2 pt-2">
-                <i class="fa fa-cart-shopping"></i>
-              </div>
-            </div>
-            <i class="fa fa-bars menu-humberger"></i>
+          <div class="header-item-right">
+            <button></button>
+            <a href="#" class="menu-icon"
+              ><i class="ion ion-md-search header-icons"></i
+            ></a>
+            <a href="#" class="menu-icon"
+              ><i class="ion ion-md-heart header-icons"></i
+            ></a>
+            <a href="#" class="menu-icon"
+              ><i class="ion ion-md-cart header-icons"></i
+            ></a>
+            <button type="button" class="menu-mobile-trigger">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
           </div>
         </div>
       </div>
@@ -536,8 +686,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="/js/bootstrap.js"></script>
     <script src="/js/root.js"></script>
-    <script src="/js/responsive_menu.js"></script>
-    <script src="/js/home/hurry_up_countdown.js"></script>
-    <script src="/js/home/hero.js"></script>
+    <script src="/js/menu.js"></script>
   </body>
 </html>
