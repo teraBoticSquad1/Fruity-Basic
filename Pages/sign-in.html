@@ -45,7 +45,7 @@
                 </button>
               </div>
               <ul class="menu-section">
-                <li><a href="/index.html">Home</a></li>
+                <li><a href="#">Home</a></li>
                 <li class="menu-item-has-children">
                   <a href="#"
                     >What's New <i class="ion ion-ios-arrow-down"></i
@@ -211,28 +211,106 @@
       </div>
     </header>
     <!-- header end -->
-    <section>
-      <h1
-        style="
-          color: var(--main-clr);
-          font-size: 175px;
-          text-align: center;
-          margin-top: 80px;
-        "
-      >
-        404
-      </h1>
-      <p
-        style="
-          color: rgb(206, 32, 32);
-          font-size: 50px;
-          text-align: center;
-          margin-bottom: 80px;
-        "
-      >
-        You are lost! Go back to home
-      </p>
-    </section>
+    <!-- common banner start -->
+    <div class="common-banner">
+      <div class="bg-opacity d-flex align-items-center">
+        <div class="container row">
+          <div
+            class="col-sm-6 d-flex justify-content-sm-start justify-content-center"
+          >
+            <div class="d-flex justify-content-sm-end justify-content-center">
+              <div class="">
+                <h6 class="main-color">// Welcome to Fruity</h6>
+                <h1 class="text-white">Account</h1>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-sm-6 d-flex justify-content-sm-end justify-content-center"
+          >
+            <span class="text-white"><b>Home&nbsp;&nbsp;&nbsp; /</b></span>
+            <span class="main-color"><b>&nbsp;&nbsp;&nbsp;Sign Up</b></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- common banner end -->
+
+    <!-- Log in form start-->
+    <div class="container w-50">
+      <h1 class="main-color text-center mt-5 mb-4">Create an Account</h1>
+      <form>
+        <div class="mb-4">
+          <input
+            type="text"
+            id="fruity-signup-name"
+            class="w-100 form-control-lg p-2 border-1 border"
+          />
+          <label class="form-label" for="fruity-signup-name">Your Name</label>
+        </div>
+
+        <div class="form-outline mb-4">
+          <input
+            type="email"
+            id="fruity-signup-email"
+            class="w-100 form-control-lg p-2 border-1 border"
+          />
+          <label class="form-label" for="fruity-signup-email">Your Email</label>
+        </div>
+
+        <div class="form-outline mb-4">
+          <input
+            type="password"
+            id="fruity-signup-pass"
+            class="w-100 form-control-lg p-2 border-1 border"
+          />
+          <label class="form-label" for="fruity-signup-pass">Password</label>
+        </div>
+
+        <div class="form-outline mb-4">
+          <input
+            type="password"
+            id="fruity-signup-pass-again"
+            class="w-100 form-control-lg p-2 border-1 border"
+          />
+          <label class="form-label" for="fruity-signup-pass-again"
+            >Repeat your password</label
+          >
+        </div>
+
+        <div class="form-check d-flex mb-5">
+          <input
+            class="form-check-input me-2"
+            type="checkbox"
+            value=""
+            id="fruity-signup-check"
+          />
+          <label class="form-check-label" for="fruity-signup-check">
+            I agree all statements in
+            <br />
+            <a href="#!" class="text-body"><u>Terms of service</u></a>
+          </label>
+        </div>
+
+        <div class="d-flex justify-content-center">
+          <button
+            type="button"
+            class="log-in-button btn-block mb-4 p-2 text-white"
+          >
+            Register
+          </button>
+        </div>
+
+        <p class="text-center text-muted mt-5 mb-0">
+          Have already an account?
+          <a class="main-color" href="login.html" class="fw-bold text-body"
+            ><u>Login here</u></a
+          >
+        </p>
+      </form>
+    </div>
+    <!-- sign up form end-->
+
     <!-- footer start -->
     <footer class="footer-wrap">
       <div class="container-fluid p-5">
